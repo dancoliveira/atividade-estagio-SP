@@ -1,0 +1,16 @@
+def inverte_string(texto):
+    string_invertida = ""
+    for i in range(len(texto) - 1, -1, -1):  # Itera da última posição até a primeira
+        string_invertida += texto[i]
+    return string_invertida
+
+# String pode ser fornecida diretamente no código ou por entrada do usuário
+texto_informado = "Exemplo de string a ser invertida"
+# Ou para entrada do usuário, descomente a linha abaixo
+# texto_informado = input("Informe uma string para ser invertida: ")
+
+# Inverte a string e exibe o resultado
+resultado = inverte_string(texto_informado)
+print("String original:", texto_informado)
+print("String invertida:", resultado)
+
